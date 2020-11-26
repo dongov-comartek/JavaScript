@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Bài tập JavaScript 9: Minh hoạ việc khai báo và sử dụng biến đối
+        tượng Array để lưu trữ danh sách và cách sử dụng các hàm của đối
+        tượng Array như hàm sort và vòng lặp for…in
+        Yêu cầu: Cho người dùng nhập vào danh sách tên của một
+        lớp, sau đó sắp xếp theo vần Alphabet rồi hiển thị danh sách đã
+        sắp xếp đó ra màn hình, mỗi người trên một dòng.
+    </h1>
+
+
+    <script>
+        let list = prompt("Bạn cần nhập bao nhiêu người", 5);
+        let listStudent = [];
+        for (let i = 0; i < list; i++) {
+            listStudent[i] = prompt("Tên sinh viên: ");
+
+        }
+
+        listStudent.sort();
+        for (let j = 0; j < listStudent.length; j++) {
+            document.write(listStudent[j]);
+            document.write("<br>");
+        }
+
+
+
+
+    </script>
+
+
+</body>
+
+</html>

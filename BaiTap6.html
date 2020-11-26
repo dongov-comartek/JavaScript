@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Bài tập JavaScript 6: Vận dụng biến đối tượng Date để tính tuổi của một người.</h1>
+    
+
+
+    <script>
+        let date=new Date();
+        let age = prompt("Nhập năm sinh của bạn: ");
+        if(age != null){
+            alert("Tuổi của bạn là " + (date.getFullYear()-age));
+        }else{
+            alert("Bạn chưa nhập tuổi");
+        }
+    </script>
+</body>
+</html>

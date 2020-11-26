@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Thêm thẻ HTML - freetuts.net</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+        <h3>Hãy viết đoạn mã Javascript khi click Add thì hiển thị nó vào thẻ div#result.</h3>
+        <h1>Thêm thẻ HTML</h1>
+ 
+        <input type="text" id="title" value=""/> 
+        <input type="button" id="button_add" onclick="add_div()" value="Add"/>
+         
+        <div id="result"></div>
+
+
+        <script>
+            function add_div() {
+                let add = document.getElementById("result");
+                let title=document.getElementById("title");
+                console.log(title.value);
+                add.value=title.value;
+                console.log(add.value);
+                document.getElementById("result").innerHTML=add.value;
+            
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h3>
+        Bài tập JavaScript 17: Tạo 3 textbox, có tên lần lượt là: SoLuong (Số lượng), DonGia (Đơn giá) và ThanhTien
+        (Thành tiền);
+        <br>
+        Yêu cầu: Khi người dùng nhập giá trị trong DonGia thì kết quả sẽ được cập nhật ngay trong ThanhTien.
+
+
+    </h3>
+    <p>Số lượng: <input type="text" id="sl"></p>
+    <p>Đơn giá: <input type="text" id="dg" onkeyup="sum()"></p>
+    <p>Thành Tiền: <a id="total"></a></p>
+    <script>
+        function sum() {
+            let sl = document.getElementById("sl");
+            let dg = document.getElementById("dg");
+            sum.value = Number(sl.value) * Number(dg.value);
+            document.getElementById("total").innerHTML = sum.value;
+        }
+    </script>
+</body>
+
+</html>

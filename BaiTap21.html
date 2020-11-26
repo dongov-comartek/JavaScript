@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h3>Giải phương trình bậc 2 : ax^2+bx+c=0.</h3>
+    <p>Nhập giá trị A: <input type="text" id="numA"></p>
+    <p>Nhập giá trị B: <input type="text" id="numB"></p>
+    <p>Nhập giá trị C: <input type="text" id="numC"></p>
+    <button onclick="btn_kq()">Tìm nghiệm</button>
+    <p> Delta: <input type="text"id="delta"></p>
+    <p>Nghiệm x1: <a id="x1"></a></p>
+    <p>Nghiệm x2: <a id="x2"></a></p>
+
+
+
+    <script>
+        function btn_kq() {
+            let numA = document.getElementById("numA");
+            console.log(numA.value);
+            let numB = document.getElementById("numB");
+            console.log(numB.value);
+            let numC = document.getElementById("numC");
+            console.log(numC.value);
+            let x =document.getElementById("delta");
+            let x1=document.getElementById("x1");
+            let x2 = document.getElementById("x2");
+            
+
+            x.value= (Number(numB.value) * Number(numB.value)) - (4 * Number(numA.value) * Number(numC.value));
+            document.getElementById("delta").innerHTML=parseFloat(x.value);
+            console.log(x.value);
+            if (x.value > 0) {
+                x1.value = (- Number(numB.value) - Math.sqrt(Number(x.value)) / 2);
+                x2.value= (- Number(numB.value) + Math.sqrt(Number(x.value)) / 2);
+                alert("phương trình có 2 nghiệm")
+                document.getElementById("x1").innerHTML=x1.value;
+                document.getElementById("x2").innerHTML=x2.value;
+
+            } else if (x.value = 0) {
+                x1.value = x2.value = (-Number(numB.value)) / (2 * Number(numA.value));
+                alert("phương trình có nghiệm kép")
+                document.getElementById("x1").innerHTML=x1.value;
+                document.getElementById("x2").innerHTML=x2.value;
+            }else{
+                alert("Phương trình vô nghiệm");
+                document.getElementById("x1").innerHTML=x1;
+                document.getElementById("x2").innerHTML=x2;
+            }
+        }
+    </script>
+</body>
+
+</html>

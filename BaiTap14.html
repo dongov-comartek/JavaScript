@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h3>
+        Bài tập JavaScript 14: Tạo một trang Web, có 2 phần tử: Phần tử button có value = "Gửi", và một phần tử
+        textbox.Yêu cầu: khi người dùng click vào nút Gửi thì thông báo trên màn hình là: "Bạn đã click vào nút gửi" còn
+        khi người dùng click vào textbox thì thông báo là "Bạn đã click vào textbox".
+    </h3>
+    <input id="msg" type="text" onclick="txt_msg()"><br>
+    <button id="btn" onclick="btn_send()">Gửi</button>
+
+
+
+    <script>
+        function btn_send() {
+            alert("Bạn đã click vào nút gửi");
+        }
+        function txt_msg(){
+            alert("Bạn đã click vào textbox");
+        }
+    </script>
+</body>
+
+</html>

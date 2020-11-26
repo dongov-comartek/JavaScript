@@ -1,0 +1,39 @@
+section {
+    color: $background-white-font;
+
+    h3 {
+        padding-bottom: 30px;
+    }
+
+    .time {
+
+        position: relative;
+        -webkit-box-reflect: below 10px linear-gradient(transparent, $background-black);
+        #seconds {
+            background: $background-DeepPink !important;
+        }
+        #hours,
+        #minute,
+        #seconds {
+            background: $background-Blue-Note;
+            font-size: 32px;
+            height: 150px;
+            width: 150px;
+            display: flex;
+            border: 1 solid !important;
+            flex-direction: column;
+            justify-content: space-between;
+            margin-right: 10px;
+
+            span {
+
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-bottom: 1px solid $background-gray-border;
+
+            }
+        }
+    }
+}

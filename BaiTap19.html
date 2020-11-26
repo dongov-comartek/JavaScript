@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h3> Xây dựng chương trình có một ô Input, một button. Khi click vào button thì in các số từ 1 tới giá trị của ô
+        input
+    </h3>
+    <p>Nhập giá trị: <input type="text" id="input-number"></p>
+    <button onclick="print_number()">In STT</button>
+    <p id="list-number"></p>
+
+
+
+
+    <script>
+        function print_number() {
+            let stt = document.getElementById("input-number");
+            let listnum='';
+            for (let i = 0; i <= stt.value; i++) {
+              listnum +=i + '<br>';                 
+                console.log(listnum);
+            }
+            document.getElementById("list-number").innerHTML=listnum;
+        }
+    </script>
+
+</body>
+
+</html>

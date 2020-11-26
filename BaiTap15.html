@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h3>
+        Tạo 2 nút, nút thứ nhất có value = "Xanh", nút thứ hai có value = "Đỏ".<br>
+        Yêu cầu: Khi người dùng click vào nút xanh thì màu nền của tài liệu là xanh (blue), còn khi người dùng click vào
+        nút đỏ thì màu nền của tài liệu là: Đỏ (red).
+    </h3>
+    <button onclick="btn_xanh()">Xanh</button>  
+    <button onclick="btn_do()">Đỏ</button> 
+
+    <script>
+        function btn_xanh(){
+            document.bgColor="blue";
+        }
+        function btn_do(){
+            document.bgColor="red";
+        }
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="good-day"></p>
+
+    <script>
+        let greeting;
+       let hour=new Date();
+        gio=hour.getHours();
+       
+        if(gio < 10){
+            document.getElementById("good-day").innerHTML="Good day";
+        }else if(gio > 20){
+            document.getElementById("good-day").innerHTML="good night";
+        }else{
+            alert("good work");
+        }
+    </script>
+</body>
+</html>

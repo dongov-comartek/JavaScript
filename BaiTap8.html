@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Minh hoạ cách đặt các câu lệnh JavaScript vào trong các phần tử HTML
+        để thực thi khi người dùng click chuột và sử dụng hàm open của đối tượng window để mở trang web.
+    </h1>
+
+
+    <script>
+        let number = prompt("Chọn số muốn nhập: ")
+        switch (number) {
+            case "1":
+                window.open("https://quantrimang.com");
+                break;
+            case "2":
+                window.open("https://download.com.vn");
+                break;
+            case "3":
+                window.open("https://vndoc.com");
+                break;
+
+            default:
+                window.open("https://meta.vn");
+                break;
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h3>
+        Viết chương trình có một ô input, một button. Khi click vào button thì in ra các số nguyên tố từ 1 tới giá trị
+        của ô input
+    </h3>
+
+    <p>Nhập giá trị: <input type="text" id="input-number"></p>
+    <button onclick="check_num()">In số nguyên tố</button>
+    <p id="list-number"></p>
+
+
+
+    <script>
+        function check_num() {
+            let n = document.getElementById("input-number");
+            let flag = true;
+            if (n.value < 2) {
+                flag = false;
+            } else if (n.value == 2) {
+                flag = true;
+            } else if (n.value % 2 == 0) {
+                flag = false;
+            } else {
+                for (let i = 3; i < n.value - 1; i += 2) {
+                    if (n.value % i == 0) {
+                        flag = false;
+                        break;
+                    }
+                }
+            }
+            // Kiểm tra biến flag
+            if (flag == true) {
+                
+                let listnum = '';
+                for (let i = 1; i <= n.value; i++) {
+                    listnum += i + '<br>';
+                    console.log(listnum);
+                }
+                document.getElementById("list-number").innerHTML = listnum;
+            }
+            else {
+                alert("Số: " + n.value + " không phải là số nguyên tố");
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Bài tập JavaScript 4: Minh hoạ cách khai báo và sử dụng
+        đối tượng Date trong JavaScript để hiển thị ngày giờ của hệ thống.
+    </h1>
+
+    <script>
+        let today, day, month, years;
+        today = new Date();
+        day = new Date();
+        month = new Date();
+        years = new Date();
+        switch (today.getDay()) {
+            case 1:
+                today = 2;
+                break;
+            case 2:
+                today = 3;
+                break;
+            case 3:
+                today = 4;
+                break;
+            case 4:
+                today = 5;
+                break;
+            case 5:
+                today = 6;
+                break;
+            case 6:
+                today = 7;
+                break;
+            case 7:
+                today = "Chủ nhật";
+                break;
+            default:
+                break;
+        }
+        alert("Hôm nay là thứ " + today + ", ngày " + day.getDate() + " tháng " + month.getMonth() + " năm " + years.getFullYear());
+    </script>
+</body>
+
+</html>

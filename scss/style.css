@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  padding-top: 20%;
+  min-height: 100vh;
+  background: #FFA17F;
+  background: -webkit-gradient(linear, left top, right top, from(#00223E), to(#FFA17F));
+  background: linear-gradient(to right, #00223E, #FFA17F);
+}
+
+section {
+  color: #ffffff;
+}
+
+section h3 {
+  padding-bottom: 30px;
+}
+
+section .time {
+  position: relative;
+  -webkit-box-reflect: below 10px linear-gradient(transparent, #4444);
+}
+
+section .time #seconds {
+  background: #FF006A !important;
+}
+
+section .time #hours,
+section .time #minute,
+section .time #seconds {
+  background: #2296F3;
+  font-size: 32px;
+  height: 150px;
+  width: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1 solid !important;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-right: 10px;
+}
+
+section .time #hours span,
+section .time #minute span,
+section .time #seconds span {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid #CCCCCC;
+}
+/*# sourceMappingURL=style.css.map */

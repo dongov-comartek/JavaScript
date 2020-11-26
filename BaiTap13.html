@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h3>
+        Bài tập JavaScript 15: Minh hoạ việc thay đổi giá trị của hộp textbox<br>
+
+        Yêu cầu: Tạo ra ba hộp text lần lượt tên là SoHang1, SoHang2, KetQua và một nút có tên là TinhTong, để thực hiện
+        phép tính tổng. Khi người dùng nhập hai số hạng vào hộp SoHang1 và SoHang2, sau đó click vào nút TinhTong thì
+        kết quả tổng sẽ được lưu vào trong hộp text KetQua.
+    </h3>
+
+    <p>Số Hàng 1: <input type="text" id="sohang1"><br></p>
+    <p>Số Hàng 2: <input type="text" id="sohang2"><br></p>
+    <p>Kết quả: <input type="text" id="kq" readonly="readonly"><br></p>
+    <button onclick="btn_Total()" value="Total">Tính Tổng</button>
+
+
+    <script>
+
+        function btn_Total() {
+            //nhập dữ liệu
+            let sohang1 = document.getElementById("sohang1");
+            console.log(sohang1.value);
+            let sohang2 = document.getElementById("sohang2");
+            console.log(sohang2.value);
+            let kq = document.getElementById("kq");
+            //thực hiện phép tính cộng
+            kq.value = parseFloat(sohang1.value) + parseFloat(sohang2.value);
+            //In ra kết quả
+            console.log(kq.value);
+            document.getElementById("kq").innerHTML = kq.value;
+
+        }
+
+
+    </script>
+</body>
+
+</html>

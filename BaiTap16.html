@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h3>
+        Bài tập JavaScript 16: Tạo một textarea có tên là NoiDung, một Textbox có tên là: SoKyTu. Với yêu cầu như sau:
+        Khi người sử dụng gõ các phím vào trong textarea thì số lượng ký tự (Độ dài xâu) chứa trong textarea đó sẽ được
+        hiển thị trong textbox. Nếu số lượng ký tự trong textarea gõ vào vượt quá 200 ký tự thì thông báo: "Bạn đã gõ
+        quá số ký tự cho phép!".
+    </h3>
+    <p>SoKyTu: <input type="text" id="stt"></p>
+    <p>Nội Dung: <textarea name="noidung" id="noidung" cols="30" rows="10" onkeyup="check()"></textarea></p>
+
+
+    <script>
+       
+        function check() {
+            let contentnd = document.getElementById("noidung");
+           
+            if (contentnd.value.length > 200) {
+                console.log(contentnd);
+                alert("Bạn đã gõ quá số ký tự cho phép!")
+            }
+            stt.value = contentnd.value.length;
+            document.getElementById("stt").innerHTML = stt.value;
+        }
+
+
+    </script>
+</body>
+
+</html>

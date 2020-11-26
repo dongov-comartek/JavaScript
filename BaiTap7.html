@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Bài tập JavaScript 7: năm sinh nhập vào không được lớn hơn năm hiện tại.</h1>
+
+    <script>
+        let date =new Date();
+        let age=prompt("Nhập năm sinh của bạn tại đây: ");
+        if(age <= date.getFullYear()){
+            alert("Năm sinh của bạn là: " + age);
+        }else{
+            alert("Bạn không được nhập năm sinh lớn hơn năm hiện tại.")
+        }
+        
+        
+    </script>
+</body>
+</html>

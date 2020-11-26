@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đồng hồ điện tử</title>
+    <link rel="stylesheet" href="./scss/style.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+</head>
+
+<body>
+    <section class="container">
+        <div class="row">
+            <div class="col-12 d-flex justify-content-center">
+                <h3 class="text-uppercase">Thời gian bây giờ là: </h3>
+            </div>
+            <div class="col-12 d-flex justify-content-center time ">
+                <div id="hours" class="text-uppercase">
+                    <span id="h">00</span>
+                    <span class="h-25" id="text">Giờ</span>
+                </div>
+                <div id="minute" class="text-uppercase">
+                    <span id="m">00</span>
+                    <span class="h-25" id="text">Phút</span>
+                </div>
+                <div id="seconds" class="text-uppercase">
+                    <span id="s">00</span>
+                    <span class="h-25" id="text">Giây</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script>
+      
+            let hours = document.getElementById("h").value;
+            let minute = document.getElementById("m").value;
+            let seconds = document.getElementById("s").value;
+            let time = new Date();
+           
+       
+          setInterval(function () {
+            time = new Date(time.getTime() + 1000);
+            document.getElementById("h").innerHTML = time.getHours();
+            document.getElementById("m").innerHTML = time.getMinutes();
+            document.getElementById("s").innerHTML = time.getSeconds();
+          },1000);
+            
+   
+
+    </script>
+
+
+</body>
+
+</html>

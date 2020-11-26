@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+        Tạo 2 phần tử như trong ví dụ 2 bằng thẻ HTML, 
+        khi người dùng click chuột vào nút Welcome thì hiển thị nội dung chứa trong text có tên là msg.
+    </h1>
+    <button onclick="welcome()">Welcome</button>
+    <input id="input-text" name="msg"  type="text" value="Welcome to javascript">
+    <script>
+        let msg=document.getElementById("input-text").value;
+        function welcome(){
+            alert(msg);
+        }
+    </script>
+
+</body>
+</html>

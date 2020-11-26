@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h3>
+        Bài tập JavaScript 12: Minh hoạ việc đọc giá trị trong phần tử text và hiển thị ra màn hình<br>
+
+        Yêu cầu: Tạo một hộp text có tên là HoTen. Một nút có tên là HienThi, value = "Hiển thị". Khi người dùng click
+        vào nút HienThi thì hiển thị nội dung trong hộp text đó bằng hàm alert.
+    </h3>
+    <input type="text" id="msg" value="HoTen">
+    <button onclick="btn_hienthi()">Hiển thị</button>
+
+
+    <script>
+        let msg=document.getElementById("msg").value;
+        function btn_hienthi(){
+            alert(msg);
+        }
+    </script>
+
+</body>
+
+</html>
